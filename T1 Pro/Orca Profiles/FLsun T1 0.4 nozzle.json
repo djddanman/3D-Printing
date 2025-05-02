@@ -1,0 +1,299 @@
+{
+    "adaptive_bed_mesh_margin": "0",
+    "auxiliary_fan": "0",
+    "bbl_use_printhost": "0",
+    "bed_custom_model": "C:\\\\Users\\\\djdda\\\\OneDrive\\\\Desktop\\\\Flsun T1 Orca configuration files\\\\T1_bed.stl",
+    "bed_custom_texture": "C:\\\\Users\\\\djdda\\\\OneDrive\\\\Desktop\\\\Flsun T1 Orca configuration files\\\\T1.svg",
+    "bed_exclude_area": [
+        "0x0"
+    ],
+    "bed_mesh_max": "99999,99999",
+    "bed_mesh_min": "-99999,-99999",
+    "bed_mesh_probe_distance": "50,50",
+    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\nG92 E0\n",
+    "best_object_pos": "0.5,0.5",
+    "change_extrusion_role_gcode": "",
+    "change_filament_gcode": "",
+    "cooling_tube_length": "5",
+    "cooling_tube_retraction": "91.5",
+    "default_filament_profile": [],
+    "default_print_profile": "0.20mm Standard @FLSun V400",
+    "deretraction_speed": [
+        "70"
+    ],
+    "disable_m73": "0",
+    "emit_machine_limits_to_gcode": "1",
+    "enable_filament_ramming": "1",
+    "enable_long_retraction_when_cut": "0",
+    "extra_loading_move": "-2",
+    "extruder_clearance_height_to_lid": "140",
+    "extruder_clearance_height_to_rod": "36",
+    "extruder_clearance_radius": "65",
+    "extruder_colour": [
+        "#018001"
+    ],
+    "extruder_offset": [
+        "0x0"
+    ],
+    "fan_kickstart": "0",
+    "fan_speedup_overhangs": "1",
+    "fan_speedup_time": "0",
+    "from": "User",
+    "gcode_flavor": "klipper",
+    "head_wrap_detect_zone": [],
+    "high_current_on_filament_swap": "0",
+    "host_type": "octoprint",
+    "inherits": "FLSun V400 0.4 nozzle",
+    "is_custom_defined": "0",
+    "layer_change_gcode": "",
+    "long_retractions_when_cut": [
+        "0"
+    ],
+    "machine_end_gcode": "M107 T0\nM104 S0\nM104 S0 T1\nM140 S0\nG92 E0\nG91\nG1 Z+0.5  F6000\nG28 \nG90 ;absolute positioning\nTIMELAPSE_RENDER",
+    "machine_load_filament_time": "0",
+    "machine_max_acceleration_e": [
+        "20000",
+        "5000"
+    ],
+    "machine_max_acceleration_extruding": [
+        "20000",
+        "20000"
+    ],
+    "machine_max_acceleration_retracting": [
+        "20000",
+        "5000"
+    ],
+    "machine_max_acceleration_travel": [
+        "20000",
+        "20000"
+    ],
+    "machine_max_acceleration_x": [
+        "20000",
+        "20000"
+    ],
+    "machine_max_acceleration_y": [
+        "20000",
+        "20000"
+    ],
+    "machine_max_acceleration_z": [
+        "20000",
+        "500"
+    ],
+    "machine_max_jerk_e": [
+        "100",
+        "2.5"
+    ],
+    "machine_max_jerk_x": [
+        "20000",
+        "12"
+    ],
+    "machine_max_jerk_y": [
+        "20000",
+        "12"
+    ],
+    "machine_max_jerk_z": [
+        "20000",
+        "0.4"
+    ],
+    "machine_max_speed_e": [
+        "20000",
+        "30"
+    ],
+    "machine_max_speed_x": [
+        "20000",
+        "1000"
+    ],
+    "machine_max_speed_y": [
+        "20000",
+        "1000"
+    ],
+    "machine_max_speed_z": [
+        "20000",
+        "20"
+    ],
+    "machine_min_extruding_rate": [
+        "0",
+        "0"
+    ],
+    "machine_min_travel_rate": [
+        "0",
+        "0"
+    ],
+    "machine_pause_gcode": "PAUSE",
+    "machine_start_gcode": "G21\nG90\nM82\nG28 ; home all axes\nM140 S[first_layer_bed_temperature]\nM104 S170 T0\nG1 F3000 Z1\nG1 X-125 Y0 Z0.4\nM109 S[first_layer_temperature] T0\nM190 S[first_layer_bed_temperature]\nM107 T0\nG92 E0\nG3 X0 Y-125 I125 Z0.3 E30 F2000\nG92 E0\nSET_TMC_CURRENT STEPPER=extruder CURRENT=0.8",
+    "machine_tool_change_time": "0",
+    "machine_unload_filament_time": "0",
+    "manual_filament_change": "0",
+    "max_layer_height": [
+        "0.3"
+    ],
+    "min_layer_height": [
+        "0.08"
+    ],
+    "name": "FLsun T1 0.4 nozzle",
+    "nozzle_diameter": [
+        "0.4"
+    ],
+    "nozzle_height": "2.5",
+    "nozzle_hrc": "0",
+    "nozzle_type": "hardened_steel",
+    "nozzle_volume": "0",
+    "parking_pos_retraction": "92",
+    "pellet_modded_printer": "0",
+    "preferred_orientation": "0",
+    "printable_area": [
+        "129.505x11.3302",
+        "128.025x22.5742",
+        "125.57x33.6464",
+        "122.16x44.4626",
+        "117.82x54.9403",
+        "112.583x64.9999",
+        "106.49x74.5649",
+        "99.5857x83.5623",
+        "91.9238x91.9238",
+        "83.5623x99.5857",
+        "74.5649x106.49",
+        "65x112.583",
+        "54.9403x117.82",
+        "44.4626x122.16",
+        "33.6464x125.57",
+        "22.5742x128.025",
+        "11.3302x129.505",
+        "7.9602e-15x130",
+        "-11.3302x129.505",
+        "-22.5742x128.025",
+        "-33.6464x125.57",
+        "-44.4626x122.16",
+        "-54.9403x117.82",
+        "-64.9999x112.583",
+        "-74.5649x106.49",
+        "-83.5623x99.5857",
+        "-91.9238x91.9238",
+        "-99.5857x83.5623",
+        "-106.49x74.5649",
+        "-112.583x65",
+        "-117.82x54.9403",
+        "-122.16x44.4626",
+        "-125.57x33.6464",
+        "-128.025x22.5742",
+        "-129.505x11.3302",
+        "-130x1.59204e-14",
+        "-129.505x-11.3302",
+        "-128.025x-22.5742",
+        "-125.57x-33.6464",
+        "-122.16x-44.4626",
+        "-117.82x-54.9403",
+        "-112.583x-65",
+        "-106.49x-74.5649",
+        "-99.5857x-83.5623",
+        "-91.9238x-91.9238",
+        "-83.5623x-99.5857",
+        "-74.5649x-106.49",
+        "-65x-112.583",
+        "-54.9403x-117.82",
+        "-44.4626x-122.16",
+        "-33.6464x-125.57",
+        "-22.5742x-128.025",
+        "-11.3302x-129.505",
+        "-2.38806e-14x-130",
+        "11.3302x-129.505",
+        "22.5742x-128.025",
+        "33.6464x-125.57",
+        "44.4626x-122.16",
+        "54.9403x-117.82",
+        "64.9999x-112.583",
+        "74.5649x-106.49",
+        "83.5623x-99.5857",
+        "91.9238x-91.9238",
+        "99.5857x-83.5623",
+        "106.49x-74.5649",
+        "112.583x-64.9999",
+        "117.82x-54.9403",
+        "122.16x-44.4626",
+        "125.57x-33.6464",
+        "128.025x-22.5742",
+        "129.505x-11.3302",
+        "130x-3.18408e-14"
+    ],
+    "printable_height": "330",
+    "printer_model": "FLSun V400",
+    "printer_notes": "",
+    "printer_settings_id": "FLsun T1 0.4 nozzle",
+    "printer_structure": "undefine",
+    "printer_technology": "FFF",
+    "printer_variant": "0.4",
+    "printhost_authorization_type": "key",
+    "printhost_ssl_ignore_revoke": "0",
+    "printing_by_object_gcode": "",
+    "purge_in_prime_tower": "1",
+    "retract_before_wipe": [
+        "70%"
+    ],
+    "retract_length_toolchange": [
+        "2"
+    ],
+    "retract_lift_above": [
+        "0"
+    ],
+    "retract_lift_below": [
+        "0"
+    ],
+    "retract_lift_enforce": [
+        "All Surfaces"
+    ],
+    "retract_on_top_layer": [
+        "1"
+    ],
+    "retract_restart_extra": [
+        "0"
+    ],
+    "retract_restart_extra_toolchange": [
+        "0"
+    ],
+    "retract_when_changing_layer": [
+        "1"
+    ],
+    "retraction_distances_when_cut": [
+        "18"
+    ],
+    "retraction_length": [
+        "1"
+    ],
+    "retraction_minimum_travel": [
+        "1"
+    ],
+    "retraction_speed": [
+        "70"
+    ],
+    "scan_first_layer": "0",
+    "silent_mode": "0",
+    "single_extruder_multi_material": "1",
+    "support_air_filtration": "1",
+    "support_chamber_temp_control": "1",
+    "support_multi_bed_types": "0",
+    "template_custom_gcode": "",
+    "thumbnails": "48x48/PNG, 300x300/PNG",
+    "thumbnails_format": "PNG",
+    "time_cost": "0",
+    "time_lapse_gcode": "",
+    "travel_slope": [
+        "3"
+    ],
+    "upward_compatible_machine": [],
+    "use_firmware_retraction": "0",
+    "use_relative_e_distances": "1",
+    "version": "2.1.1.0",
+    "wipe": [
+        "1"
+    ],
+    "wipe_distance": [
+        "1"
+    ],
+    "z_hop": [
+        "0"
+    ],
+    "z_hop_types": [
+        "Normal Lift"
+    ],
+    "z_offset": "0"
+}
